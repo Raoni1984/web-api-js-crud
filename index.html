@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Cadastro JS com Web API</title>
+</head>
+<body>
+    <div class="container">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <h1>Alunos</h1>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Cadastrar Aluno
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="titulo">Cadastrar Aluno</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group"><label>Nome:</label><input id="nome" class="form-control" type="text"></div>
+                            <div class="form-group"><label>Sobrenome:</label><input id="sobrenome" class="form-control" type="text"></div>
+                            <div class="form-group"><label>Telefone:</label><input id="telefone" class="form-control" type="text"></div>
+                            <div class="form-group"><label>RA:</label><input id="ra" class="form-control" type="text"></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-outline-success" id="btnSalvar" data-dismiss="modal" onclick="Cadastrar()">Cadastrar</button>
+                            <button class="btn btn-outline-warning" id="btnCancelar" onclick="Cancelar()">Limpar Campos</button>
+                            <button class="btn btn-outline-danger" data-dismiss="modal" onclick="Cancelar()">Cancelar</button>
+                            
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <td>Nome</td>
+                        <td>Sobrenome</td>
+                        <td>Telefone</td>
+                        <td>RA</td>
+                        <td colspan="2">Opções</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--content here generated in ./scripts/script.js-->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./scripts/script.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="./bootstrap/js/bootbox.min.js"></script>
+</body>
+</html>
